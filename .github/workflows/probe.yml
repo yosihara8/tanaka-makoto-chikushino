@@ -21,20 +21,15 @@ jobs:
           PY
           D=https://www.city.chikushino.fukuoka.dbsr.jp
           curl -sSL -A "Mozilla/5.0" -m 60 -c jar -b jar "$D/index.php/" -o top.html
-          python3 - <<'PY'
-          import re
-          s=open('top.html',encoding='utf-8').read()
-          i=s.find('form-horizontal'); f=s[i-200:i+9000]
-          f=re.sub(r'(?s)<option value="[^"]*">(?!田中允)[^<]*</option>\s*','',f)
-          print(re.sub(r'\n\s*\n','\n',f)[:6000])
-          PY
+          sleep 20
           ACT=$(grep -o 'action="/index.php/[0-9]*?Template=List"' top.html | head -1 | sed 's/action="//;s/"//')
           echo "ACTION $ACT"
           curl -sSL -A "Mozilla/5.0" -m 90 -c jar -b jar "$D$ACT" \
-            --data-urlencode "optionsSpeakers=1" --data-urlencode "SpeakerName[]=田中允" \
+            --data-urlencode "optionsSpeakers=on" --data-urlencode "SpeakerName[]=31" \
             --data-urlencode "Cabinet[]=1" --data-urlencode "Class[]=3" \
             --data-urlencode "QueryType=New" --data-urlencode "Template=List" -o res.html -w 'HTTP %{http_code} %{url_effective}\n'
           python3 dump.py res.html 0
+          grep -o 'href="[^"]*Template=[^"]*"' res.html | sort | uniq -c | sort -rn | head -30
           echo "================ 3958 older"
           curl -sSL -A "Mozilla/5.0" -m 60 https://www.city.chikushino.fukuoka.jp/soshiki/1/3958.html -o n.html
-          python3 dump.py n.html 9000
+          python3 dump.py n.html 4300
