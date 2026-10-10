@@ -730,7 +730,7 @@
     "date": "2009-09-25",
     "document": 307,
     "topics": [
-     "年度に実施された学力テストの本市における成績について",
+     "2009年度に実施された学力テストの本市における成績について",
      "光が丘・美しが丘の断水について",
      "プレミアムつき商品券の効果について"
     ],
@@ -1097,12 +1097,7 @@
    "num": 1,
    "start": "2013-02-13",
    "roles": [],
-   "general_question": {
-    "date": "2013-02-13",
-    "document": 1230,
-    "topics": [],
-    "source": "minutes"
-   },
+   "general_question": null,
    "proposals": [],
    "debates": [],
    "documents": [
@@ -1258,7 +1253,7 @@
     "date": "2014-06-20",
     "document": 560,
     "topics": [
-     "ならし保育の繰り上允げ実施について",
+     "ならし保育の繰り上げ実施について",
      "学童保育の現状と将来の課題について",
      "市民プールの建設について"
     ],
@@ -1376,7 +1371,7 @@
     "date": "2015-06-30",
     "document": 612,
     "topics": [
-     "地方創生について允",
+     "地方創生について",
      "コミュニティバスの運行について"
     ],
     "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8516.pdf",
@@ -1402,7 +1397,7 @@
     "date": "2015-09-25",
     "document": 625,
     "topics": [
-     "全国学力テストにつ允いて",
+     "全国学力テストについて",
      "筑紫野市文化協会等市内の各文化団体の育成振興はどの様になされているのか",
      "市内にも限界集落に陥る様な行政区も出て来るのでは"
     ],
@@ -1429,7 +1424,7 @@
     "date": "2015-12-15",
     "document": 636,
     "topics": [
-     "マイナンバー制度の允独自活用について"
+     "マイナンバー制度の独自活用について"
     ],
     "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8514.pdf",
     "source": "notice"
@@ -1509,7 +1504,7 @@
     "date": "2016-09-21",
     "document": 677,
     "topics": [
-     "地域包括支援セン允ターとコミュニティ運営協議会の連携について",
+     "地域包括支援センターとコミュニティ運営協議会の連携について",
      "2016全国学力テストの結果について",
      "選挙と市選挙管理委員会について"
     ],
@@ -1586,7 +1581,15 @@
    "num": 3,
    "start": "2017-06-09",
    "roles": [],
-   "general_question": null,
+   "general_question": {
+    "date": "2017-06-22",
+    "document": 720,
+    "topics": [
+     "通学区域の見直しについて",
+     "現在の大規模校の状況と解消のための対策について"
+    ],
+    "source": "minutes"
+   },
    "proposals": [],
    "debates": [],
    "documents": [
@@ -1801,7 +1804,7 @@
     "date": "2019-03-18",
     "document": 799,
     "topics": [
-     "保育所待機児童の実允態と今後の対策について",
+     "保育所待機児童の実態と今後の対策について",
      "外国人労働者の受け入れ拡大が決まったが市の対応は"
     ],
     "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8501.pdf",
@@ -1989,7 +1992,18 @@
    "num": 6,
    "start": "2020-12-15",
    "roles": [],
-   "general_question": null,
+   "general_question": {
+    "date": "2020-12-15",
+    "document": 880,
+    "topics": [
+     "発熱者などの診療や検査体制について",
+     "保育所や幼稚園でのコロナ対応について",
+     "コロナと市民サービスについて",
+     "市庁舎で職員から感染者が発生した場合の対応について",
+     "給付金などを円滑に交付するためのシステムについて"
+    ],
+    "source": "minutes"
+   },
    "proposals": [],
    "debates": [],
    "documents": [
