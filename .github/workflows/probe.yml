@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Probe
         run: |
-          sudo apt-get install -y -qq poppler-utils >/dev/null 2>&1; which pdftotext
+          sudo apt-get update -qq >/dev/null && sudo apt-get install -y -qq poppler-utils >/dev/null; which pdftotext
           B=https://www.city.chikushino.fukuoka.jp
           for id in 33496 34398 34392 33486 28723; do
             echo "=================== PDF $id"
