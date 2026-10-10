@@ -22,6 +22,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "history.json"
+RAW = ROOT / "data" / "history_raw.json"  # 取得した会議録の生データ（再処理用）
 DBSR = "https://www.city.chikushino.fukuoka.dbsr.jp"
 CITY = "https://www.city.chikushino.fukuoka.jp"
 NOTICE_PAGE = CITY + "/soshiki/1/3958.html"
@@ -113,7 +114,7 @@ def search_documents():
     return sorted(docs.values(), key=lambda d: (d["date"], d["id"]))
 
 
-GQ_HINT = re.compile(r"通告|一般質問|題目|質問してまいります|質問を行います|質問いたします|お尋ねいたします")
+GQ_HINT = re.compile(r"通告|一般質問|題目|項目|再質問|福祉の田中|質問してまいります|質問を行います")
 TOPIC_RE = re.compile(
     r"(?:第?[0-9一二三四五六七八九十]+(?:題目|項目|点目)(?:め|目)?[の、は]?\s*|題目[、は]\s*|次に、|まず、|それでは、|最後に、|続きまして、)"
     r"「?([^。、「」（）]{4,48}?(?:について|の件|に向けて))")
@@ -123,8 +124,9 @@ def extract_topics(text):
     found = []
     for m in TOPIC_RE.finditer(text.translate(ZEN)):
         t = m.group(1).strip()
-        t = re.sub(r"^(?:の|は|、|まず|再質問)+", "", t)
-        if re.search(r"再質問|御答弁|答弁|お尋ね|質問|ございます|させていただ", t):
+        t = re.sub(r"^(?:[0-9]+(?:項目め|題目|項目)?の?|第[0-9]+(?:題目|項目)の|の|は|、|まず|また|最初に|最後に|再質問|今述べましたように)+", "", t)
+        if (len(t) < 5 or re.search(r"再質問|御答弁|答弁|お尋ね|質問|ございます|させていただ|^第?[0-9]+(?:項目|題目)", t)
+                or re.fullmatch(r"(?:今後の|成果と|実態と今後の)?(?:課題|方針)について", t)):
             continue
         if not any(t in f or f in t for f in found):
             found.append(t)
@@ -158,9 +160,12 @@ def classify(docs):
             m = re.search(r"(.{2,60}?)(?:に対し|について|に)、?(賛成|反対)の立場", t)
             if m:
                 s["debates"].append({"subject": m.group(1).translate(ZEN).strip("、 私は"), "stance": m.group(2)})
-        if (len(member) >= 3 and any(GQ_HINT.search(sp["text"]) for sp in member[:2])
-                and not s["general_question"]):
+        score = sum(1 for sp in member if GQ_HINT.search(sp["text"]))
+        if len(member) >= 3 and score and score > s.get("_gq_score", 0):
+            s["_gq_score"] = score
             s["general_question"] = {"date": d["date"], "document": d["id"], "topics": []}
+    for v in sessions.values():
+        v.pop("_gq_score", None)
     return sessions
 
 
@@ -204,81 +209,96 @@ def pdf_words(url):
     return pages
 
 
+RANK_RE = re.compile(r"^\d+[（(]\d+番[)）]$")
+
+
 def notice_topics(url):
-    """通告書PDFの表から田中議員の「質問題目」欄を取り出す"""
+    """通告書PDFの表から田中議員の「質問題目」欄を取り出す
+
+    表は「順位(議席番号)・氏名｜番号・質問題目｜(1)質問項目」の列で構成される。
+    題目欄は番号「1」「2」…の右側から、質問項目の「(1)」の左側までの範囲。
+    """
     pages = pdf_words(url)
-    col = None
+    picked, started = [], False
     for words in pages:
-        heads = {w[4]: w for w in words}
-        t = next((w for w in words if "題目" in w[4] or w[4] in ("質問事項", "件名")), None)
-        g = next((w for w in words if "要旨" in w[4] or "内容" in w[4]), None)
-        if t and g and t[0] < g[0]:
-            col = (t[0] - 25, g[0] - 5)
-            break
-    if not col:
-        return []
-    cells, active = [], False
-    for words in pages:
-        name_rows = sorted({round(w[1]) for w in words if w[0] < col[0] and re.fullmatch(r"[一-鿿]{1,3}", w[4])})
-        tanaka = [w for w in words if w[4] in ("田中", "田") and w[0] < col[0]]
-        start = min((w[1] for w in tanaka), default=None)
-        if start is None and not active:
+        left = [w for w in words if w[0] < 110]
+        ranks = sorted(w[1] for w in left if RANK_RE.match(w[4].translate(ZEN)))
+        items = [w[0] for w in words if re.fullmatch(r"[（(]\d+[)）]", w[4].translate(ZEN))]
+        if not items:
             continue
-        top = start - 30 if start is not None else 0
-        # 次の議員の行（田中議員より下にある氏名欄の語）で区切る
-        others = [w[1] for w in words if w[0] < col[0] - 5 and w[1] > (start or 0) + 40
-                  and re.fullmatch(r"[一-鿿]{1,4}", w[4]) and w[4] not in ("田中", "允", "田", "中")]
-        bottom = min(others, default=1e9)
-        cells += sorted([w for w in words if col[0] <= w[0] < col[1] and top <= w[1] < bottom], key=lambda w: (round(w[1] / 4), w[0]))
-        active = bottom == 1e9
-        if not active:
+        item_x = min(items)
+        head = max((w[1] for w in words if w[4] in ("題", "題目", "質問題目")), default=0)
+        if not started:
+            name = next((w for w in left if w[4] == "田中" and any(v[4] == "允" and abs(v[1] - w[1]) < 3 for v in left)), None)
+            if not name:
+                continue
+            top = max((y for y in ranks if y <= name[1] + 1), default=name[1] - 12) - 2
+            started = True
+        else:
+            top = head + 5
+        bottom = min((y for y in ranks if y > top + 4), default=1e9)
+        picked += [w for w in words if 100 <= w[0] < item_x - 3 and top <= w[1] < bottom - 2]
+        if bottom < 1e9:
             break
-    # 行ごとに連結し、番号で題目を区切る
-    rows, cur_y = [], None
-    for w in cells:
-        if cur_y is None or abs(w[1] - cur_y) > 4:
-            rows.append([])
-            cur_y = w[1]
-        rows[-1].append(w[4])
+    picked.sort(key=lambda w: (round(w[1]), w[0]))
+    num_x = min((w[0] for w in picked if re.fullmatch(r"\d{1,2}", w[4].translate(ZEN))), default=None)
     topics = []
-    for r in rows:
-        line = "".join(r).translate(ZEN)
-        m = re.match(r"^([0-9]{1,2})[\.．\s]?(.*)", line)
-        if m and m.group(2):
-            topics.append(m.group(2))
+    for w in picked:
+        t = w[4].translate(ZEN)
+        if num_x is not None and re.fullmatch(r"\d{1,2}", t) and abs(w[0] - num_x) < 6:
+            topics.append("")
         elif topics:
-            topics[-1] += line
-        elif line:
-            topics.append(line)
+            topics[-1] += t
+        else:
+            topics.append(t)
     return [t.strip() for t in topics if len(t.strip()) >= 3][:8]
 
 
 # ---------------------------------------------------------------- main
 
 def main():
-    docs = search_documents()
+    raw = json.loads(RAW.read_text(encoding="utf-8")) if RAW.exists() else {}
+    if "--reprocess" in sys.argv and raw:  # 保存済みの会議録データを使い、ネット取得は通告書だけにする
+        docs = raw["docs"]
+    else:
+        docs = search_documents()
+    texts = raw.get("texts", {})
     sessions = classify(docs)
     notices = notice_pdfs()
     print(f"通告書PDF: {len(notices)} 件", file=sys.stderr)
+    # 通告書がある会期（平成26年〜）は、通告書に名前があるかで一般質問の有無を判断する
+    for name, url in notices.items():
+        s = sessions.get(name)
+        if not s or s["year"] >= STREAM_FROM[0]:
+            continue
+        try:
+            topics = notice_topics(url)
+        except Exception as e:
+            print(f"通告書の読み取り失敗 {name}: {e}", file=sys.stderr)
+            continue
+        if topics:
+            gq = s["general_question"] or {"date": "", "document": max(s["documents"], key=lambda d: d["date"])["id"], "topics": []}
+            gq.update({"topics": topics, "notice": url, "source": "notice"})
+            s["general_question"] = gq
+        elif s["general_question"]:
+            print(f"通告書に名前なし（会議録の判定を取り消し）: {name}", file=sys.stderr)
+            s["general_question"] = None
     for name, s in sorted(sessions.items(), key=lambda kv: (kv[1]["year"], kv[1]["num"])):
         gq = s["general_question"]
         if not gq or s["year"] >= STREAM_FROM[0]:
             continue
-        if name in notices:
-            try:
-                gq["topics"] = notice_topics(notices[name])
-                gq["source"] = "notice"
-                gq["notice"] = notices[name]
-            except Exception as e:
-                print(f"通告書の読み取り失敗 {name}: {e}", file=sys.stderr)
-        if not gq["topics"]:
-            gq["topics"] = extract_topics(fetch_question_text(gq["document"]))
+        if not gq["topics"] and gq.get("source") != "notice":
+            key = str(gq["document"])
+            if key not in texts:
+                texts[key] = fetch_question_text(gq["document"])
+            gq["topics"] = extract_topics(texts[key])
             gq["source"] = "minutes"
         print(f"{name}: {gq['source']} {gq['topics']}", file=sys.stderr)
+    RAW.parent.mkdir(exist_ok=True)
+    RAW.write_text(json.dumps({"docs": docs, "texts": texts}, ensure_ascii=False) + "\n", encoding="utf-8")
     data = {"sessions": sorted(sessions.values(), key=lambda s: (s["year"], s["num"])),
             "minutes_base": DBSR + "/index.php/?Template=view&VoiceType=all&DocumentID=",
             "documents": len(docs)}
-    OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"保存しました: {len(data['sessions'])} 会期 / {len(docs)} 文書", file=sys.stderr)
 
