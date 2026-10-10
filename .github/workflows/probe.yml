@@ -1,0 +1,30 @@
+name: probe
+on:
+  push:
+    branches: [claude/homepage-photo-display-j1c0up]
+    paths: [".github/workflows/probe.yml"]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sudo apt-get update -qq >/dev/null && sudo apt-get install -y -qq poppler-utils >/dev/null
+      - name: Dump words around 田中
+        run: |
+          for id in 8521 8501 9333 31799; do
+            echo "=========== $id"
+            curl -sSL -m 60 https://www.city.chikushino.fukuoka.jp/uploaded/attachment/$id.pdf -o a.pdf
+            pdftotext -bbox a.pdf a.xml
+            python3 - <<'PY'
+          import re,html
+          x=open('a.xml',encoding='utf-8').read()
+          for pi,pg in enumerate(re.findall(r'(?s)<page[^>]*>(.*?)</page>',x)):
+              W=[(float(a),float(b),html.unescape(w)) for a,b,c,d,w in re.findall(r'<word xMin="([\d.]+)" yMin="([\d.]+)" xMax="([\d.]+)" yMax="([\d.]+)">([^<]*)</word>',pg)]
+              if pi==0: print('HEADER:',[ (round(a),round(b),w) for a,b,w in W[:30]])
+              T=[w for w in W if w[2] in ('田中','田','允')]
+              for t in T:
+                  y=t[1]; near=sorted([w for w in W if y-15<=w[1]<=y+160],key=lambda w:(round(w[1]),w[0]))
+                  print('PAGE',pi,'TANAKA at',round(t[0]),round(y))
+                  print(' | '.join(f'{round(a)},{round(b)}:{w}' for a,b,w in near[:90]))
+                  break
+          PY
+          done
