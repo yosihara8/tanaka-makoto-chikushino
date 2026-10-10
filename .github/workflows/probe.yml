@@ -12,17 +12,29 @@ jobs:
           cat > dump.py <<'PY'
           import re,html,sys
           s=open(sys.argv[1],encoding='utf-8',errors='replace').read()
-          print('FORMS:',re.findall(r'(?is)<form[^>]*>',s)[:10])
-          print('INPUTS:',re.findall(r'(?is)<(?:input|select)[^>]*name="([^"]*)"[^>]*>',s)[:40])
           s=re.sub(r'(?is)<(script|style)[^>]*>.*?</\1>','',s)
           s=re.sub(r'(?is)<a [^>]*href="([^"]*)"[^>]*>',r' [\1] ',s)
           t=html.unescape(re.sub(r'<[^>]+>','\n',s))
-          print('\n'.join(l.strip() for l in t.split('\n') if l.strip())[:int(sys.argv[2]) if len(sys.argv)>2 else 5000])
+          L=[l.strip() for l in t.split('\n') if l.strip()]
+          a=int(sys.argv[2]) if len(sys.argv)>2 else 0
+          print('\n'.join(L)[a:a+7000])
           PY
-          get(){ echo "=================== $1"; curl -sSL -A "Mozilla/5.0" -m 60 -c jar -b jar "$1" -o p.html -w 'HTTP %{http_code} %{url_effective}\n'; python3 dump.py p.html ${2:-5000}; }
           D=https://www.city.chikushino.fukuoka.dbsr.jp
-          get "$D/index.php/"
-          get "$D/index.php/?Template=search-speaker" 
-          C=https://www.city.chikushino.fukuoka.jp
-          get "$C/soshiki/1/3958.html"
-          get "$C/soshiki/1/2964.html" 8000
+          curl -sSL -A "Mozilla/5.0" -m 60 -c jar -b jar "$D/index.php/" -o top.html
+          python3 - <<'PY'
+          import re
+          s=open('top.html',encoding='utf-8').read()
+          i=s.find('form-horizontal'); f=s[i-200:i+9000]
+          f=re.sub(r'(?s)<option value="[^"]*">(?!田中允)[^<]*</option>\s*','',f)
+          print(re.sub(r'\n\s*\n','\n',f)[:6000])
+          PY
+          ACT=$(grep -o 'action="/index.php/[0-9]*?Template=List"' top.html | head -1 | sed 's/action="//;s/"//')
+          echo "ACTION $ACT"
+          curl -sSL -A "Mozilla/5.0" -m 90 -c jar -b jar "$D$ACT" \
+            --data-urlencode "optionsSpeakers=1" --data-urlencode "SpeakerName[]=田中允" \
+            --data-urlencode "Cabinet[]=1" --data-urlencode "Class[]=3" \
+            --data-urlencode "QueryType=New" --data-urlencode "Template=List" -o res.html -w 'HTTP %{http_code} %{url_effective}\n'
+          python3 dump.py res.html 0
+          echo "================ 3958 older"
+          curl -sSL -A "Mozilla/5.0" -m 60 https://www.city.chikushino.fukuoka.jp/soshiki/1/3958.html -o n.html
+          python3 dump.py n.html 9000
