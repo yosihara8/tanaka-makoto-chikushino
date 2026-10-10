@@ -124,7 +124,7 @@ def extract_topics(text):
     found = []
     for m in TOPIC_RE.finditer(text.translate(ZEN)):
         t = m.group(1).strip()
-        t = re.sub(r"^(?:[0-9]+(?:項目め|題目|項目)?の?|第[0-9]+(?:題目|項目)の|の|は|、|まず|また|最初に|最後に|再質問|今述べましたように)+", "", t)
+        t = re.sub(r"^(?:[0-9]+(?:項目め|題目|項目)?の|[0-9]+(?:項目め|題目|項目)|第[0-9]+(?:題目|項目)の|の|は|、|まず|また|最初に|最後に|再質問|今述べましたように)+", "", t)
         if (len(t) < 5 or re.search(r"再質問|御答弁|答弁|お尋ね|質問|ございます|させていただ|^第?[0-9]+(?:項目|題目)", t)
                 or re.fullmatch(r"(?:今後の|成果と|実態と今後の)?(?:課題|方針)について", t)):
             continue
@@ -161,7 +161,7 @@ def classify(docs):
             if m:
                 s["debates"].append({"subject": m.group(1).translate(ZEN).strip("、 私は"), "stance": m.group(2)})
         score = sum(1 for sp in member if GQ_HINT.search(sp["text"]))
-        if len(member) >= 3 and score and score > s.get("_gq_score", 0):
+        if "臨時会" not in name and len(member) >= 3 and score and score > s.get("_gq_score", 0):
             s["_gq_score"] = score
             s["general_question"] = {"date": d["date"], "document": d["id"], "topics": []}
     for v in sessions.values():
@@ -237,7 +237,8 @@ def notice_topics(url):
         else:
             top = head + 5
         bottom = min((y for y in ranks if y > top + 4), default=1e9)
-        picked += [w for w in words if 100 <= w[0] < item_x - 3 and top <= w[1] < bottom - 2]
+        picked += [w for w in words if 100 <= w[0] < item_x - 3 and top <= w[1] < bottom - 2
+                   and w[4] not in ("田中", "允", "田", "中")]
         if bottom < 1e9:
             break
     picked.sort(key=lambda w: (round(w[1]), w[0]))
@@ -258,7 +259,7 @@ def notice_topics(url):
 
 def main():
     raw = json.loads(RAW.read_text(encoding="utf-8")) if RAW.exists() else {}
-    if "--reprocess" in sys.argv and raw:  # 保存済みの会議録データを使い、ネット取得は通告書だけにする
+    if raw and "--full" not in sys.argv:  # 保存済みの会議録データを使う（--full で会議録から取得し直す）
         docs = raw["docs"]
     else:
         docs = search_documents()
@@ -281,8 +282,7 @@ def main():
             gq.update({"topics": topics, "notice": url, "source": "notice"})
             s["general_question"] = gq
         elif s["general_question"]:
-            print(f"通告書に名前なし（会議録の判定を取り消し）: {name}", file=sys.stderr)
-            s["general_question"] = None
+            print(f"通告書から題目を読み取れず（会議録で補う）: {name}", file=sys.stderr)
     for name, s in sorted(sessions.items(), key=lambda kv: (kv[1]["year"], kv[1]["num"])):
         gq = s["general_question"]
         if not gq or s["year"] >= STREAM_FROM[0]:
