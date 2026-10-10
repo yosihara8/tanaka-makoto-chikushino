@@ -1,0 +1,30 @@
+name: 過去の議会活動の収集
+
+# 会議録検索システム等から過去の記録を集め直す（通常は一度だけ実行すればよい）
+on:
+  workflow_dispatch:
+  push:
+    branches: [claude/homepage-photo-display-j1c0up]
+    paths: ["scripts/build_history.py", ".github/workflows/build-history.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pdftotext
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+      - name: Collect history
+        run: python3 scripts/build_history.py
+      - name: Commit and push
+        run: |
+          git add data/history.json
+          if git diff --cached --quiet; then echo "変更なし"; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "過去の議会活動を収集"
+          git push
