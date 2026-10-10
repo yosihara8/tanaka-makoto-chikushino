@@ -23,18 +23,22 @@ jobs:
           D=https://www.city.chikushino.fukuoka.dbsr.jp
           curl -sSL -A "Mozilla/5.0" -m 60 -c jar -b jar "$D/index.php/" -o top.html; sleep 15
           ACT=$(grep -o 'action="/index.php/[0-9]*?Template=List"' top.html | head -1 | sed 's/action="//;s/"//')
-          echo "######## doc list (document names only, oldest first)"
-          curl -sSL -A "Mozilla/5.0" -m 90 -c jar -b jar "$D$ACT" --data-urlencode "optionsSpeakers=on" --data-urlencode "SpeakerName[]=31" --data-urlencode "Cabinet[]=1" --data-urlencode "Class[]=3" --data-urlencode "QueryType=New" --data-urlencode "Template=List" -o res.html; sleep 15
-          SID=$(grep -o '/index.php/[0-9]*?Template=list' res.html | head -1 | cut -d/ -f3 | cut -d'?' -f1); echo SID $SID
-          curl -sSL -A "Mozilla/5.0" -m 90 -c jar -b jar "$D/index.php/$SID?Template=list&ListType=Document&ListOrder=ASC" -o l1.html; sleep 15
-          python3 dump.py l1.html 0 3500
-          echo "######## view doc 1156 head"
-          curl -sSL -A "Mozilla/5.0" -m 90 -c jar -b jar "$D/index.php/$SID?Template=view&VoiceType=all&DocumentID=1156" -o v.html; sleep 15
-          python3 dump.py v.html 0 3500
-          echo "######## old doc 2005? find a 2004-2006 doc id from list"
-          grep -o 'DocumentID=[0-9]*' l1.html | head -3
-          ID=$(grep -o 'DocumentID=[0-9]*' l1.html | head -1 | cut -d= -f2)
-          curl -sSL -A "Mozilla/5.0" -m 90 -c jar -b jar "$D/index.php/$SID?Template=view&VoiceType=all&DocumentID=$ID" -o v2.html; sleep 5
-          python3 dump.py v2.html 0 3500
-          echo "######## 通告 PDFs"
-          for id in 8521 31799; do curl -sSL -m 60 https://www.city.chikushino.fukuoka.jp/uploaded/attachment/$id.pdf -o a.pdf; pdftotext -layout a.pdf - | sed 's/   */  /g' | grep -n -A12 '田\s*中\s*允\|田 *中' | head -40; echo ----; done
+          echo "######## 目次 search"
+          curl -sSL -A "Mozilla/5.0" -m 90 -c jar -b jar "$D$ACT" --data-urlencode "Phrase=田中允" --data-urlencode "Cabinet[]=1" --data-urlencode "Class[]=1" --data-urlencode "TermStartYear=2010" --data-urlencode "TermEndYear=2010" --data-urlencode "QueryType=New" --data-urlencode "Template=List" -o res.html; sleep 15
+          python3 dump.py res.html 150 1500
+          SID=$(grep -o '/index.php/[0-9]*?Template=' res.html | head -1 | cut -d/ -f3 | cut -d'?' -f1)
+          for ID in $(grep -o 'DocumentID=[0-9]*' res.html | cut -d= -f2 | sort -u | head -2); do
+            echo "######## 目次 doc $ID"
+            curl -sSL -A "Mozilla/5.0" -m 90 -c jar -b jar "$D/index.php/$SID?Template=view&VoiceType=all&DocumentID=$ID" -o v.html; sleep 15
+            python3 - <<'PY'
+          import re,html
+          s=open('v.html',encoding='utf-8',errors='replace').read()
+          s=re.sub(r'(?is)<(script|style)[^>]*>.*?</\1>','',s)
+          t=html.unescape(re.sub(r'<[^>]+>','\n',s))
+          L=[l.strip() for l in t.split('\n') if l.strip()]
+          print('\n'.join(L[:12]))
+          for i,l in enumerate(L):
+              if '田中' in l and '允' in l:
+                  print('...'); print('\n'.join(L[max(0,i-2):i+12]))
+          PY
+          done
