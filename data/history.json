@@ -1,0 +1,2516 @@
+{
+ "sessions": [
+  {
+   "session": "平成16年第1回定例会",
+   "year": 2004,
+   "num": 1,
+   "start": "2004-03-02",
+   "roles": [
+    "議長"
+   ],
+   "general_question": null,
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 5,
+     "title": "平成16年第１回定例会（第１日）　本文",
+     "date": "2004-03-02"
+    },
+    {
+     "id": 7,
+     "title": "平成16年第１回定例会（第２日）　本文",
+     "date": "2004-03-05"
+    },
+    {
+     "id": 9,
+     "title": "平成16年第１回定例会（第３日）　本文",
+     "date": "2004-03-08"
+    },
+    {
+     "id": 11,
+     "title": "平成16年第１回定例会（第４日）　本文",
+     "date": "2004-03-23"
+    },
+    {
+     "id": 13,
+     "title": "平成16年第１回定例会（第５日）　本文",
+     "date": "2004-03-24"
+    },
+    {
+     "id": 15,
+     "title": "平成16年第１回定例会（第６日）　本文",
+     "date": "2004-03-26"
+    }
+   ]
+  },
+  {
+   "session": "平成16年第2回定例会",
+   "year": 2004,
+   "num": 2,
+   "start": "2004-06-03",
+   "roles": [
+    "議長"
+   ],
+   "general_question": null,
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 20,
+     "title": "平成16年第２回定例会（第１日）　本文",
+     "date": "2004-06-03"
+    },
+    {
+     "id": 22,
+     "title": "平成16年第２回定例会（第２日）　本文",
+     "date": "2004-06-07"
+    },
+    {
+     "id": 24,
+     "title": "平成16年第２回定例会（第３日）　本文",
+     "date": "2004-06-15"
+    },
+    {
+     "id": 26,
+     "title": "平成16年第２回定例会（第４日）　本文",
+     "date": "2004-06-16"
+    },
+    {
+     "id": 28,
+     "title": "平成16年第２回定例会（第５日）　本文",
+     "date": "2004-06-18"
+    }
+   ]
+  },
+  {
+   "session": "平成16年第3回臨時会",
+   "year": 2004,
+   "num": 3,
+   "start": "2004-07-29",
+   "roles": [
+    "議長"
+   ],
+   "general_question": null,
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 1163,
+     "title": "平成16年第３回臨時会（第１日）　本文",
+     "date": "2004-07-29"
+    }
+   ]
+  },
+  {
+   "session": "平成16年第4回定例会",
+   "year": 2004,
+   "num": 4,
+   "start": "2004-09-07",
+   "roles": [
+    "議長"
+   ],
+   "general_question": null,
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 33,
+     "title": "平成16年第４回定例会（第１日）　本文",
+     "date": "2004-09-07"
+    },
+    {
+     "id": 35,
+     "title": "平成16年第４回定例会（第２日）　本文",
+     "date": "2004-09-10"
+    },
+    {
+     "id": 37,
+     "title": "平成16年第４回定例会（第３日）　本文",
+     "date": "2004-09-29"
+    },
+    {
+     "id": 39,
+     "title": "平成16年第４回定例会（第４日）　本文",
+     "date": "2004-09-30"
+    },
+    {
+     "id": 41,
+     "title": "平成16年第４回定例会（第５日）　本文",
+     "date": "2004-10-04"
+    }
+   ]
+  },
+  {
+   "session": "平成16年第5回定例会",
+   "year": 2004,
+   "num": 5,
+   "start": "2004-12-01",
+   "roles": [
+    "議長"
+   ],
+   "general_question": null,
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 46,
+     "title": "平成16年第５回定例会（第１日）　本文",
+     "date": "2004-12-01"
+    },
+    {
+     "id": 48,
+     "title": "平成16年第５回定例会（第２日）　本文",
+     "date": "2004-12-03"
+    },
+    {
+     "id": 50,
+     "title": "平成16年第５回定例会（第３日）　本文",
+     "date": "2004-12-14"
+    },
+    {
+     "id": 52,
+     "title": "平成16年第５回定例会（第４日）　本文",
+     "date": "2004-12-15"
+    },
+    {
+     "id": 54,
+     "title": "平成16年第５回定例会（第５日）　本文",
+     "date": "2004-12-17"
+    }
+   ]
+  },
+  {
+   "session": "平成17年第1回定例会",
+   "year": 2005,
+   "num": 1,
+   "start": "2005-02-28",
+   "roles": [
+    "議長"
+   ],
+   "general_question": null,
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 59,
+     "title": "平成17年第１回定例会（第１日）　本文",
+     "date": "2005-02-28"
+    },
+    {
+     "id": 61,
+     "title": "平成17年第１回定例会（第２日）　本文",
+     "date": "2005-03-03"
+    },
+    {
+     "id": 63,
+     "title": "平成17年第１回定例会（第３日）　本文",
+     "date": "2005-03-04"
+    },
+    {
+     "id": 65,
+     "title": "平成17年第１回定例会（第４日）　本文",
+     "date": "2005-03-22"
+    },
+    {
+     "id": 67,
+     "title": "平成17年第１回定例会（第５日）　本文",
+     "date": "2005-03-23"
+    },
+    {
+     "id": 69,
+     "title": "平成17年第１回定例会（第６日）　本文",
+     "date": "2005-03-25"
+    }
+   ]
+  },
+  {
+   "session": "平成17年第2回臨時会",
+   "year": 2005,
+   "num": 2,
+   "start": "2005-05-25",
+   "roles": [
+    "議長"
+   ],
+   "general_question": null,
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 1168,
+     "title": "平成17年第２回臨時会（第１日）　本文",
+     "date": "2005-05-25"
+    }
+   ]
+  },
+  {
+   "session": "平成17年第3回定例会",
+   "year": 2005,
+   "num": 3,
+   "start": "2005-06-03",
+   "roles": [
+    "文教福祉常任委員長"
+   ],
+   "general_question": null,
+   "proposals": [
+    "発議第2号地方六団体改革案の早期実現に関する意見書",
+    "発議第3号地方議会制度の充実強化に関する意見書"
+   ],
+   "debates": [],
+   "documents": [
+    {
+     "id": 76,
+     "title": "平成17年第３回定例会（第２日）　本文",
+     "date": "2005-06-03"
+    },
+    {
+     "id": 82,
+     "title": "平成17年第３回定例会（第５日）　本文",
+     "date": "2005-06-17"
+    }
+   ]
+  },
+  {
+   "session": "平成17年第4回定例会",
+   "year": 2005,
+   "num": 4,
+   "start": "2005-09-30",
+   "roles": [
+    "文教福祉常任委員長"
+   ],
+   "general_question": null,
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 93,
+     "title": "平成17年第４回定例会（第４日）　本文",
+     "date": "2005-09-30"
+    },
+    {
+     "id": 95,
+     "title": "平成17年第４回定例会（第５日）　本文",
+     "date": "2005-10-04"
+    }
+   ]
+  },
+  {
+   "session": "平成17年第6回定例会",
+   "year": 2005,
+   "num": 6,
+   "start": "2005-12-15",
+   "roles": [
+    "文教福祉常任委員長"
+   ],
+   "general_question": null,
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 106,
+     "title": "平成17年第６回定例会（第４日）　本文",
+     "date": "2005-12-15"
+    },
+    {
+     "id": 108,
+     "title": "平成17年第６回定例会（第５日）　本文",
+     "date": "2005-12-19"
+    }
+   ]
+  },
+  {
+   "session": "平成18年第1回定例会",
+   "year": 2006,
+   "num": 1,
+   "start": "2006-03-03",
+   "roles": [
+    "文教福祉常任委員長"
+   ],
+   "general_question": {
+    "date": "2006-03-22",
+    "document": 119,
+    "topics": [
+     "宝満川の堤体道路や県道筑紫野・久留米線の整備について",
+     "宝満川の堤体道路整備について",
+     "県道久留米・筑紫野線の整備について",
+     "県道の西小田橋から西小田・津古駅北側の踏切に至る区間の通学路の整備について",
+     "西小田橋のかけかえを含む県道の整備について",
+     "公共事業における地場産業の育成について",
+     "筑紫野南公園の建設について"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [
+    "発議第1号筑紫野市議会委員会条例の一部を改正する条例の制定",
+    "発議第2号筑紫野市議会議員の報酬条例の一部を改正する条例の制定"
+   ],
+   "debates": [],
+   "documents": [
+    {
+     "id": 117,
+     "title": "平成18年第１回定例会（第３日）　本文",
+     "date": "2006-03-03"
+    },
+    {
+     "id": 119,
+     "title": "平成18年第１回定例会（第４日）　本文",
+     "date": "2006-03-22"
+    },
+    {
+     "id": 123,
+     "title": "平成18年第１回定例会（第６日）　本文",
+     "date": "2006-03-27"
+    }
+   ]
+  },
+  {
+   "session": "平成18年第2回定例会",
+   "year": 2006,
+   "num": 2,
+   "start": "2006-06-05",
+   "roles": [
+    "文教福祉常任委員長"
+   ],
+   "general_question": {
+    "date": "2006-06-14",
+    "document": 134,
+    "topics": [
+     "企業の誘致計画の進捗状況について",
+     "原田地区の遊技場について",
+     "山口地区の流通団地について"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [
+    "発議第3号「（仮称）産業廃棄物処理場問題の抜本的解決を求める促進期成会」結成の決議"
+   ],
+   "debates": [],
+   "documents": [
+    {
+     "id": 130,
+     "title": "平成18年第２回定例会（第２日）　本文",
+     "date": "2006-06-05"
+    },
+    {
+     "id": 134,
+     "title": "平成18年第２回定例会（第４日）　本文",
+     "date": "2006-06-14"
+    },
+    {
+     "id": 136,
+     "title": "平成18年第２回定例会（第５日）　本文",
+     "date": "2006-06-16"
+    }
+   ]
+  },
+  {
+   "session": "平成18年第3回定例会",
+   "year": 2006,
+   "num": 3,
+   "start": "2006-09-07",
+   "roles": [
+    "文教福祉常任委員長"
+   ],
+   "general_question": null,
+   "proposals": [
+    "発議第5号筑紫野市議会議員の報酬条例の一部を改正する条例の制定"
+   ],
+   "debates": [],
+   "documents": [
+    {
+     "id": 143,
+     "title": "平成18年第３回定例会（第２日）　本文",
+     "date": "2006-09-07"
+    },
+    {
+     "id": 147,
+     "title": "平成18年第３回定例会（第４日）　本文",
+     "date": "2006-09-26"
+    },
+    {
+     "id": 149,
+     "title": "平成18年第３回定例会（第５日）　本文",
+     "date": "2006-09-29"
+    }
+   ]
+  },
+  {
+   "session": "平成18年第4回定例会",
+   "year": 2006,
+   "num": 4,
+   "start": "2006-12-13",
+   "roles": [
+    "文教福祉常任委員長"
+   ],
+   "general_question": {
+    "date": "2006-12-13",
+    "document": 158,
+    "topics": [
+     "原田地区の複合商業施設の開発について",
+     "宝満環境センターの委託業者の職員の身分の保障の確保について"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [
+    "発議第6号冷水有料道路の通行料金の見直しに関する意見書の提出"
+   ],
+   "debates": [],
+   "documents": [
+    {
+     "id": 158,
+     "title": "平成18年第４回定例会（第３日）　本文",
+     "date": "2006-12-13"
+    },
+    {
+     "id": 162,
+     "title": "平成18年第４回定例会（第５日）　本文",
+     "date": "2006-12-18"
+    }
+   ]
+  },
+  {
+   "session": "平成19年第3回定例会",
+   "year": 2007,
+   "num": 3,
+   "start": "2007-06-25",
+   "roles": [],
+   "general_question": {
+    "date": "2007-06-25",
+    "document": 184,
+    "topics": [],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 184,
+     "title": "平成19年第３回定例会（第４日）　本文",
+     "date": "2007-06-25"
+    }
+   ]
+  },
+  {
+   "session": "平成19年第4回定例会",
+   "year": 2007,
+   "num": 4,
+   "start": "2007-09-26",
+   "roles": [],
+   "general_question": {
+    "date": "2007-09-26",
+    "document": 199,
+    "topics": [
+     "宝満川の西小田橋の架けかえや堤体道路の整備について",
+     "土地開発公社や市の所有する遊休地等について"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 199,
+     "title": "平成19年第４回定例会（第４日）　本文",
+     "date": "2007-09-26"
+    }
+   ]
+  },
+  {
+   "session": "平成19年第5回定例会",
+   "year": 2007,
+   "num": 5,
+   "start": "2007-12-06",
+   "roles": [],
+   "general_question": {
+    "date": "2007-12-18",
+    "document": 212,
+    "topics": [],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 208,
+     "title": "平成19年第５回定例会（第２日）　本文",
+     "date": "2007-12-06"
+    },
+    {
+     "id": 212,
+     "title": "平成19年第５回定例会（第４日）　本文",
+     "date": "2007-12-18"
+    },
+    {
+     "id": 214,
+     "title": "平成19年第５回定例会（第５日）　本文",
+     "date": "2007-12-20"
+    }
+   ]
+  },
+  {
+   "session": "平成20年第1回定例会",
+   "year": 2008,
+   "num": 1,
+   "start": "2008-03-03",
+   "roles": [],
+   "general_question": {
+    "date": "2008-03-18",
+    "document": 227,
+    "topics": [
+     "筑紫駅西口土地区画整理事業の縮小について",
+     "本区画整理事業の縮小について",
+     "施政方針について",
+     "優良企業の誘致について",
+     "縮小後のインフラ整備について",
+     "ごみ対策事業について",
+     "ＪＲ二日市駅東西口駅前広場整備事業について"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 223,
+     "title": "平成20年第１回定例会（第３日）　本文",
+     "date": "2008-03-03"
+    },
+    {
+     "id": 227,
+     "title": "平成20年第１回定例会（第５日）　本文",
+     "date": "2008-03-18"
+    },
+    {
+     "id": 229,
+     "title": "平成20年第１回定例会（第６日）　本文",
+     "date": "2008-03-21"
+    }
+   ]
+  },
+  {
+   "session": "平成20年第3回定例会",
+   "year": 2008,
+   "num": 3,
+   "start": "2008-09-25",
+   "roles": [],
+   "general_question": {
+    "date": "2008-09-25",
+    "document": 253,
+    "topics": [
+     "平成20年度に実施されました全国学力・学習状況調査の結果について",
+     "学力テストについて",
+     "学力保証について",
+     "地区計画のまちづくりについて"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 253,
+     "title": "平成20年第３回定例会（第４日）　本文",
+     "date": "2008-09-25"
+    },
+    {
+     "id": 255,
+     "title": "平成20年第３回定例会（第５日）　本文",
+     "date": "2008-09-29"
+    }
+   ]
+  },
+  {
+   "session": "平成20年第4回定例会",
+   "year": 2008,
+   "num": 4,
+   "start": "2008-12-16",
+   "roles": [],
+   "general_question": {
+    "date": "2008-12-16",
+    "document": 264,
+    "topics": [
+     "所得制限について",
+     "定額給付金について"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 264,
+     "title": "平成20年第４回定例会（第３日）　本文",
+     "date": "2008-12-16"
+    },
+    {
+     "id": 268,
+     "title": "平成20年第４回定例会（第５日）　本文",
+     "date": "2008-12-19"
+    }
+   ]
+  },
+  {
+   "session": "平成21年第1回定例会",
+   "year": 2009,
+   "num": 1,
+   "start": "2009-03-19",
+   "roles": [],
+   "general_question": {
+    "date": "2009-03-19",
+    "document": 281,
+    "topics": [
+     "定額給付金の支給について",
+     "二日市東小学校の校区再編について",
+     "山神水道企業団の職員逮捕について",
+     "ＬＥＤの蛍光灯の採用について"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 281,
+     "title": "平成21年第１回定例会（第５日）　本文",
+     "date": "2009-03-19"
+    }
+   ]
+  },
+  {
+   "session": "平成21年第3回定例会",
+   "year": 2009,
+   "num": 3,
+   "start": "2009-06-23",
+   "roles": [],
+   "general_question": null,
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 294,
+     "title": "平成21年第３回定例会（第４日）　本文",
+     "date": "2009-06-23"
+    },
+    {
+     "id": 296,
+     "title": "平成21年第３回定例会（第５日）　本文",
+     "date": "2009-06-25"
+    }
+   ]
+  },
+  {
+   "session": "平成21年第4回臨時会",
+   "year": 2009,
+   "num": 4,
+   "start": "2009-07-15",
+   "roles": [],
+   "general_question": null,
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 1192,
+     "title": "平成21年第４回臨時会（第１日）　本文",
+     "date": "2009-07-15"
+    },
+    {
+     "id": 1194,
+     "title": "平成21年第４回臨時会（第２日）　本文",
+     "date": "2009-07-16"
+    }
+   ]
+  },
+  {
+   "session": "平成21年第6回定例会",
+   "year": 2009,
+   "num": 6,
+   "start": "2009-09-25",
+   "roles": [],
+   "general_question": {
+    "date": "2009-09-25",
+    "document": 307,
+    "topics": [
+     "2009年度に実施された学力テストの本市における成績について",
+     "光が丘・美しが丘の断水について",
+     "プレミアムつき商品券の効果について"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 307,
+     "title": "平成21年第６回定例会（第４日）　本文",
+     "date": "2009-09-25"
+    },
+    {
+     "id": 309,
+     "title": "平成21年第６回定例会（第５日）　本文",
+     "date": "2009-09-29"
+    }
+   ]
+  },
+  {
+   "session": "平成21年第8回定例会",
+   "year": 2009,
+   "num": 8,
+   "start": "2009-12-15",
+   "roles": [],
+   "general_question": null,
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 318,
+     "title": "平成21年第８回定例会（第３日）　本文",
+     "date": "2009-12-15"
+    }
+   ]
+  },
+  {
+   "session": "平成22年第1回定例会",
+   "year": 2010,
+   "num": 1,
+   "start": "2010-02-26",
+   "roles": [],
+   "general_question": {
+    "date": "2010-03-17",
+    "document": 335,
+    "topics": [
+     "学校2学期制について",
+     "上原田地区の整備について",
+     "上原田公園の進捗状況について"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 327,
+     "title": "平成22年第１回定例会（第１日）　本文",
+     "date": "2010-02-26"
+    },
+    {
+     "id": 331,
+     "title": "平成22年第１回定例会（第３日）　本文",
+     "date": "2010-03-03"
+    },
+    {
+     "id": 335,
+     "title": "平成22年第１回定例会（第５日）　本文",
+     "date": "2010-03-17"
+    },
+    {
+     "id": 337,
+     "title": "平成22年第１回定例会（第６日）　本文",
+     "date": "2010-03-24"
+    }
+   ]
+  },
+  {
+   "session": "平成22年第2回定例会",
+   "year": 2010,
+   "num": 2,
+   "start": "2010-06-17",
+   "roles": [],
+   "general_question": {
+    "date": "2010-06-17",
+    "document": 346,
+    "topics": [],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 346,
+     "title": "平成22年第２回定例会（第３日）　本文",
+     "date": "2010-06-17"
+    }
+   ]
+  },
+  {
+   "session": "平成22年第3回定例会",
+   "year": 2010,
+   "num": 3,
+   "start": "2010-09-22",
+   "roles": [],
+   "general_question": {
+    "date": "2010-09-22",
+    "document": 361,
+    "topics": [
+     "コピー用紙の入札について",
+     "平原市長の責任について"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 361,
+     "title": "平成22年第３回定例会（第４日）　本文",
+     "date": "2010-09-22"
+    }
+   ]
+  },
+  {
+   "session": "平成22年第5回定例会",
+   "year": 2010,
+   "num": 5,
+   "start": "2010-12-15",
+   "roles": [],
+   "general_question": {
+    "date": "2010-12-15",
+    "document": 372,
+    "topics": [
+     "届出保育施設について"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 372,
+     "title": "平成22年第５回定例会（第３日）　本文",
+     "date": "2010-12-15"
+    }
+   ]
+  },
+  {
+   "session": "平成23年第1回定例会",
+   "year": 2011,
+   "num": 1,
+   "start": "2011-03-14",
+   "roles": [],
+   "general_question": null,
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 385,
+     "title": "平成23年第１回定例会（第３日）　本文",
+     "date": "2011-03-14"
+    }
+   ]
+  },
+  {
+   "session": "平成23年第3回定例会",
+   "year": 2011,
+   "num": 3,
+   "start": "2011-06-06",
+   "roles": [],
+   "general_question": null,
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 392,
+     "title": "平成23年第３回定例会（第１日）　本文",
+     "date": "2011-06-06"
+    },
+    {
+     "id": 398,
+     "title": "平成23年第３回定例会（第４日）　本文",
+     "date": "2011-06-23"
+    }
+   ]
+  },
+  {
+   "session": "平成23年第4回定例会",
+   "year": 2011,
+   "num": 4,
+   "start": "2011-09-21",
+   "roles": [],
+   "general_question": {
+    "date": "2011-09-21",
+    "document": 409,
+    "topics": [
+     "入札制度と地場産業の育成について",
+     "有料ごみ袋の値下げについて"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 409,
+     "title": "平成23年第４回定例会（第３日）　本文",
+     "date": "2011-09-21"
+    }
+   ]
+  },
+  {
+   "session": "平成23年第6回定例会",
+   "year": 2011,
+   "num": 6,
+   "start": "2011-12-15",
+   "roles": [],
+   "general_question": {
+    "date": "2011-12-15",
+    "document": 422,
+    "topics": [],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 422,
+     "title": "平成23年第６回定例会（第３日）　本文",
+     "date": "2011-12-15"
+    },
+    {
+     "id": 426,
+     "title": "平成23年第６回定例会（第５日）　本文",
+     "date": "2011-12-21"
+    }
+   ]
+  },
+  {
+   "session": "平成24年第1回定例会",
+   "year": 2012,
+   "num": 1,
+   "start": "2012-03-14",
+   "roles": [],
+   "general_question": {
+    "date": "2012-03-14",
+    "document": 437,
+    "topics": [
+     "エコ・センチュリー21株式会社の産廃処理施設設置について",
+     "エコ・センチュリー21対策山家・御笠地区特別委員会からなされた陳情について",
+     "共同調理場の現況と将来の計画について",
+     "地場産業の食材使用について",
+     "集団感染について"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 437,
+     "title": "平成24年第１回定例会（第４日）　本文",
+     "date": "2012-03-14"
+    }
+   ]
+  },
+  {
+   "session": "平成24年第2回定例会",
+   "year": 2012,
+   "num": 2,
+   "start": "2012-06-18",
+   "roles": [],
+   "general_question": {
+    "date": "2012-06-18",
+    "document": 452,
+    "topics": [
+     "震災瓦れきについて",
+     "ＪＡＬの機内誌5月号の記事の内容について"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [
+    {
+     "subject": "請願第3号エコ・センチュリー21（株）の産業廃棄物処理施設の設置に反対する請願",
+     "stance": "賛成"
+    }
+   ],
+   "documents": [
+    {
+     "id": 452,
+     "title": "平成24年第２回定例会（第３日）　本文",
+     "date": "2012-06-18"
+    },
+    {
+     "id": 456,
+     "title": "平成24年第２回定例会（第５日）　本文",
+     "date": "2012-06-21"
+    }
+   ]
+  },
+  {
+   "session": "平成24年第3回定例会",
+   "year": 2012,
+   "num": 3,
+   "start": "2012-09-21",
+   "roles": [],
+   "general_question": {
+    "date": "2012-09-21",
+    "document": 467,
+    "topics": [
+     "市民農園について",
+     "園芸農業指導者の設置について",
+     "小型耕うん機の配置について",
+     "インターネットモールについて"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 467,
+     "title": "平成24年第３回定例会（第４日）　本文",
+     "date": "2012-09-21"
+    }
+   ]
+  },
+  {
+   "session": "平成24年第4回定例会",
+   "year": 2012,
+   "num": 4,
+   "start": "2012-12-03",
+   "roles": [],
+   "general_question": {
+    "date": "2012-12-17",
+    "document": 478,
+    "topics": [
+     "紛争予防条例による地元説明会について",
+     "飲酒運転の撲滅について"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 474,
+     "title": "平成24年第４回定例会（第１日）　本文",
+     "date": "2012-12-03"
+    },
+    {
+     "id": 478,
+     "title": "平成24年第４回定例会（第３日）　本文",
+     "date": "2012-12-17"
+    }
+   ]
+  },
+  {
+   "session": "平成25年第1回臨時会",
+   "year": 2013,
+   "num": 1,
+   "start": "2013-02-13",
+   "roles": [],
+   "general_question": null,
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 1230,
+     "title": "平成25年第１回臨時会（第１日）　本文",
+     "date": "2013-02-13"
+    },
+    {
+     "id": 1232,
+     "title": "平成25年第１回臨時会（第２日）　本文",
+     "date": "2013-02-15"
+    }
+   ]
+  },
+  {
+   "session": "平成25年第2回定例会",
+   "year": 2013,
+   "num": 2,
+   "start": "2013-03-19",
+   "roles": [],
+   "general_question": {
+    "date": "2013-03-19",
+    "document": 495,
+    "topics": [
+     "エコ・センチュリー21株式会社の産業廃棄物処理施設の設置について"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 495,
+     "title": "平成25年第２回定例会（第５日）　本文",
+     "date": "2013-03-19"
+    }
+   ]
+  },
+  {
+   "session": "平成25年第4回定例会",
+   "year": 2013,
+   "num": 4,
+   "start": "2013-06-26",
+   "roles": [],
+   "general_question": {
+    "date": "2013-06-26",
+    "document": 508,
+    "topics": [],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 508,
+     "title": "平成25年第４回定例会（第４日）　本文",
+     "date": "2013-06-26"
+    }
+   ]
+  },
+  {
+   "session": "平成25年第5回定例会",
+   "year": 2013,
+   "num": 5,
+   "start": "2013-09-18",
+   "roles": [],
+   "general_question": {
+    "date": "2013-09-18",
+    "document": 521,
+    "topics": [
+     "平成25年度の学力テストの結果について"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 521,
+     "title": "平成25年第５回定例会（第４日）　本文",
+     "date": "2013-09-18"
+    }
+   ]
+  },
+  {
+   "session": "平成25年第6回定例会",
+   "year": 2013,
+   "num": 6,
+   "start": "2013-12-18",
+   "roles": [],
+   "general_question": {
+    "date": "2013-12-18",
+    "document": 534,
+    "topics": [
+     "学校教育改革について",
+     "土曜日授業の実施について"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 534,
+     "title": "平成25年第６回定例会（第４日）　本文",
+     "date": "2013-12-18"
+    }
+   ]
+  },
+  {
+   "session": "平成26年第1回定例会",
+   "year": 2014,
+   "num": 1,
+   "start": "2014-02-26",
+   "roles": [],
+   "general_question": {
+    "date": "2014-03-19",
+    "document": 547,
+    "topics": [
+     "市職員の定数と人数について",
+     "非正規職員の身分と待遇について",
+     "交差点の改良について",
+     "ウインドウズＸＰ問題について",
+     "施政方針にある増加する不登校児童の対策について",
+     "施政方針にある子ども・子育て支援について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8521.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 541,
+     "title": "平成26年第１回定例会（第１日）　本文",
+     "date": "2014-02-26"
+    },
+    {
+     "id": 547,
+     "title": "平成26年第１回定例会（第４日）　本文",
+     "date": "2014-03-19"
+    }
+   ]
+  },
+  {
+   "session": "平成26年第2回定例会",
+   "year": 2014,
+   "num": 2,
+   "start": "2014-06-20",
+   "roles": [],
+   "general_question": {
+    "date": "2014-06-20",
+    "document": 560,
+    "topics": [
+     "ならし保育の繰り上げ実施について",
+     "学童保育の現状と将来の課題について",
+     "市民プールの建設について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8520.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 560,
+     "title": "平成26年第２回定例会（第４日）　本文",
+     "date": "2014-06-20"
+    }
+   ]
+  },
+  {
+   "session": "平成26年第3回定例会",
+   "year": 2014,
+   "num": 3,
+   "start": "2014-09-19",
+   "roles": [],
+   "general_question": {
+    "date": "2014-09-19",
+    "document": 573,
+    "topics": [
+     "筑紫野市中小企業振興基本条例の制定について",
+     "筑紫野市公契約条例の制定について",
+     "学力テストの結果の公表について",
+     "平成26年8月豪雨災害について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8519.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 573,
+     "title": "平成26年第３回定例会（第４日）　本文",
+     "date": "2014-09-19"
+    },
+    {
+     "id": 575,
+     "title": "平成26年第３回定例会（第５日）　本文",
+     "date": "2014-09-24"
+    }
+   ]
+  },
+  {
+   "session": "平成26年第4回定例会",
+   "year": 2014,
+   "num": 4,
+   "start": "2014-12-17",
+   "roles": [],
+   "general_question": {
+    "date": "2014-12-17",
+    "document": 586,
+    "topics": [
+     "筑紫野市第五次総合計画の策定について",
+     "県道53号久留米筑紫野線の整備について",
+     "少人数学級の取り組みについて"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8518.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 586,
+     "title": "平成26年第４回定例会（第４日）　本文",
+     "date": "2014-12-17"
+    },
+    {
+     "id": 588,
+     "title": "平成26年第４回定例会（第５日）　本文",
+     "date": "2014-12-19"
+    }
+   ]
+  },
+  {
+   "session": "平成27年第1回定例会",
+   "year": 2015,
+   "num": 1,
+   "start": "2015-03-19",
+   "roles": [],
+   "general_question": {
+    "date": "2015-03-19",
+    "document": 597,
+    "topics": [
+     "川崎市中1暴行死事件について",
+     "国民健康保険の運用について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8517.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 597,
+     "title": "平成27年第１回定例会（第３日）　本文",
+     "date": "2015-03-19"
+    }
+   ]
+  },
+  {
+   "session": "平成27年第3回定例会",
+   "year": 2015,
+   "num": 3,
+   "start": "2015-06-30",
+   "roles": [],
+   "general_question": {
+    "date": "2015-06-30",
+    "document": 612,
+    "topics": [
+     "地方創生について",
+     "コミュニティバスの運行について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8516.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 612,
+     "title": "平成27年第３回定例会（第４日）　本文",
+     "date": "2015-06-30"
+    }
+   ]
+  },
+  {
+   "session": "平成27年第4回定例会",
+   "year": 2015,
+   "num": 4,
+   "start": "2015-09-25",
+   "roles": [],
+   "general_question": {
+    "date": "2015-09-25",
+    "document": 625,
+    "topics": [
+     "全国学力テストについて",
+     "筑紫野市文化協会等市内の各文化団体の育成振興はどの様になされているのか",
+     "市内にも限界集落に陥る様な行政区も出て来るのでは"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8515.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 625,
+     "title": "平成27年第４回定例会（第４日）　本文",
+     "date": "2015-09-25"
+    }
+   ]
+  },
+  {
+   "session": "平成27年第5回定例会",
+   "year": 2015,
+   "num": 5,
+   "start": "2015-12-15",
+   "roles": [],
+   "general_question": {
+    "date": "2015-12-15",
+    "document": 636,
+    "topics": [
+     "マイナンバー制度の独自活用について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8514.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 636,
+     "title": "平成27年第５回定例会（第３日）　本文",
+     "date": "2015-12-15"
+    }
+   ]
+  },
+  {
+   "session": "平成28年第1回定例会",
+   "year": 2016,
+   "num": 1,
+   "start": "2016-03-22",
+   "roles": [],
+   "general_question": {
+    "date": "2016-03-22",
+    "document": 651,
+    "topics": [
+     "地域コミュニティによるまちづくりについて",
+     "学校教育について",
+     "日銀のゼロ金利（実質マイナス）政策について",
+     "テレワークについて"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8513.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 651,
+     "title": "平成28年第１回定例会（第４日）　本文",
+     "date": "2016-03-22"
+    }
+   ]
+  },
+  {
+   "session": "平成28年第2回定例会",
+   "year": 2016,
+   "num": 2,
+   "start": "2016-06-24",
+   "roles": [],
+   "general_question": {
+    "date": "2016-06-24",
+    "document": 664,
+    "topics": [
+     "市職員等の被災地派遣支援の成果と今後の課題について",
+     "子宮頸がん予防ワクチンについて",
+     "下見池をスポーツ公園に"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8512.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 664,
+     "title": "平成28年第２回定例会（第４日）　本文",
+     "date": "2016-06-24"
+    }
+   ]
+  },
+  {
+   "session": "平成28年第3回定例会",
+   "year": 2016,
+   "num": 3,
+   "start": "2016-09-21",
+   "roles": [],
+   "general_question": {
+    "date": "2016-09-21",
+    "document": 677,
+    "topics": [
+     "地域包括支援センターとコミュニティ運営協議会の連携について",
+     "2016全国学力テストの結果について",
+     "選挙と市選挙管理委員会について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8511.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 677,
+     "title": "平成28年第３回定例会（第４日）　本文",
+     "date": "2016-09-21"
+    }
+   ]
+  },
+  {
+   "session": "平成28年第4回定例会",
+   "year": 2016,
+   "num": 4,
+   "start": "2016-12-15",
+   "roles": [],
+   "general_question": {
+    "date": "2016-12-15",
+    "document": 692,
+    "topics": [
+     "新市庁舎建設を起爆剤としたまちづくり等について",
+     "高齢者の自動車運転事故防止について",
+     "国際教育到達度評価学会（ＩＥＡ）の学力調査について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8510.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 692,
+     "title": "平成28年第４回定例会（第３日）　本文",
+     "date": "2016-12-15"
+    }
+   ]
+  },
+  {
+   "session": "平成29年第1回定例会",
+   "year": 2017,
+   "num": 1,
+   "start": "2017-03-22",
+   "roles": [],
+   "general_question": {
+    "date": "2017-03-22",
+    "document": 709,
+    "topics": [
+     "市職員の市民サービスのための研修について",
+     "小学校3年生からの英語（外国語活動）導入について",
+     "筑紫野市の人口推計について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8509.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 709,
+     "title": "平成29年第１回定例会（第５日）　本文",
+     "date": "2017-03-22"
+    }
+   ]
+  },
+  {
+   "session": "平成29年第3回定例会",
+   "year": 2017,
+   "num": 3,
+   "start": "2017-06-09",
+   "roles": [],
+   "general_question": {
+    "date": "2017-06-22",
+    "document": 720,
+    "topics": [
+     "通学区域の見直しについて",
+     "現在の大規模校の状況と解消のための対策について"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 716,
+     "title": "平成29年第３回定例会（第１日）　本文",
+     "date": "2017-06-09"
+    },
+    {
+     "id": 720,
+     "title": "平成29年第３回定例会（第３日）　本文",
+     "date": "2017-06-22"
+    },
+    {
+     "id": 722,
+     "title": "平成29年第３回定例会（第４日）　本文",
+     "date": "2017-06-27"
+    }
+   ]
+  },
+  {
+   "session": "平成29年第4回定例会",
+   "year": 2017,
+   "num": 4,
+   "start": "2017-09-19",
+   "roles": [],
+   "general_question": {
+    "date": "2017-09-19",
+    "document": 731,
+    "topics": [
+     "全国学力テストについて",
+     "中学校教員の部活指導について",
+     "市役所跡地利用について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8507.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 731,
+     "title": "平成29年第４回定例会（第３日）　本文",
+     "date": "2017-09-19"
+    }
+   ]
+  },
+  {
+   "session": "平成29年第5回定例会",
+   "year": 2017,
+   "num": 5,
+   "start": "2017-12-14",
+   "roles": [],
+   "general_question": {
+    "date": "2017-12-14",
+    "document": 742,
+    "topics": [
+     "筑紫小学校の学校選択制について",
+     "市職員の勤務状況について",
+     "筑紫野市公共交通網形成計画について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8506.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [
+    {
+     "subject": "おはようございます。議案第67号筑紫野市議会議員の議員報酬及び費用弁償等に関する条例の一部を改正する条例の制定",
+     "stance": "反対"
+    }
+   ],
+   "documents": [
+    {
+     "id": 742,
+     "title": "平成29年第５回定例会（第３日）　本文",
+     "date": "2017-12-14"
+    },
+    {
+     "id": 744,
+     "title": "平成29年第５回定例会（第４日）　本文",
+     "date": "2017-12-19"
+    }
+   ]
+  },
+  {
+   "session": "平成30年第1回定例会",
+   "year": 2018,
+   "num": 1,
+   "start": "2018-03-19",
+   "roles": [],
+   "general_question": {
+    "date": "2018-03-19",
+    "document": 755,
+    "topics": [
+     "天拝山観月会・二日市温泉藤まつり等に巡回バスを",
+     "中学生の制服について",
+     "新市庁舎建設に伴う機構改革について",
+     "コミュニティ運営協議会について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8505.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 755,
+     "title": "平成30年第１回定例会（第４日）　本文",
+     "date": "2018-03-19"
+    }
+   ]
+  },
+  {
+   "session": "平成30年第2回定例会",
+   "year": 2018,
+   "num": 2,
+   "start": "2018-06-21",
+   "roles": [],
+   "general_question": {
+    "date": "2018-06-21",
+    "document": 766,
+    "topics": [
+     "萩原グラウンド等スポーツ施設の補修整備等について",
+     "認知症の人の保険加入について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8504.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 766,
+     "title": "平成30年第２回定例会（第３日）　本文",
+     "date": "2018-06-21"
+    }
+   ]
+  },
+  {
+   "session": "平成30年第3回定例会",
+   "year": 2018,
+   "num": 3,
+   "start": "2018-09-18",
+   "roles": [],
+   "general_question": {
+    "date": "2018-09-18",
+    "document": 777,
+    "topics": [
+     "筑紫女学園大学となされた包括連携協定について",
+     "全国学力テストについて",
+     "障がい者雇用について",
+     "藤田市長の3期目出馬について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8503.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 777,
+     "title": "平成30年第３回定例会（第３日）　本文",
+     "date": "2018-09-18"
+    }
+   ]
+  },
+  {
+   "session": "平成30年第4回定例会",
+   "year": 2018,
+   "num": 4,
+   "start": "2018-12-18",
+   "roles": [],
+   "general_question": {
+    "date": "2018-12-18",
+    "document": 788,
+    "topics": [
+     "防犯ブザーの普及について",
+     "西小田橋の架け替えや西小田地区の道路拡幅について",
+     "市庁舎周辺の環境整備について",
+     "水道民営化について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8502.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [
+    {
+     "subject": "議案第86号筑紫野市議会議員の議員報酬及び費用弁償等に関する条例の一部を改正する条例の制定",
+     "stance": "反対"
+    }
+   ],
+   "documents": [
+    {
+     "id": 788,
+     "title": "平成30年第４回定例会（第３日）　本文",
+     "date": "2018-12-18"
+    },
+    {
+     "id": 790,
+     "title": "平成30年第４回定例会（第４日）　本文",
+     "date": "2018-12-21"
+    }
+   ]
+  },
+  {
+   "session": "平成31年第1回定例会",
+   "year": 2019,
+   "num": 1,
+   "start": "2019-03-18",
+   "roles": [],
+   "general_question": {
+    "date": "2019-03-18",
+    "document": 799,
+    "topics": [
+     "保育所待機児童の実態と今後の対策について",
+     "外国人労働者の受け入れ拡大が決まったが市の対応は"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8501.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 799,
+     "title": "平成31年第１回定例会（第３日）　本文",
+     "date": "2019-03-18"
+    }
+   ]
+  },
+  {
+   "session": "令和元年第3回定例会",
+   "year": 2019,
+   "num": 3,
+   "start": "2019-07-01",
+   "roles": [],
+   "general_question": {
+    "date": "2019-07-01",
+    "document": 812,
+    "topics": [
+     "中高年の引きこもりについて",
+     "障がい者に優しい市役所作りについて",
+     "いじめなどに対する第三者委員会の設置について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8500.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 812,
+     "title": "令和元年第３回定例会（第４日）　本文",
+     "date": "2019-07-01"
+    }
+   ]
+  },
+  {
+   "session": "令和元年第4回定例会",
+   "year": 2019,
+   "num": 4,
+   "start": "2019-09-19",
+   "roles": [],
+   "general_question": {
+    "date": "2019-09-19",
+    "document": 823,
+    "topics": [
+     "全国学力テストについて",
+     "市役所のＩＣＴ化に向けた取り組みについて",
+     "正規職員の勤務状況について",
+     "第六次総合計画について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8499.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 823,
+     "title": "令和元年第４回定例会（第３日）　本文",
+     "date": "2019-09-19"
+    }
+   ]
+  },
+  {
+   "session": "令和元年第5回定例会",
+   "year": 2019,
+   "num": 5,
+   "start": "2019-12-17",
+   "roles": [],
+   "general_question": {
+    "date": "2019-12-17",
+    "document": 834,
+    "topics": [
+     "福岡県が実施している「大規模盛土造成地の所在調査」について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8498.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 834,
+     "title": "令和元年第５回定例会（第３日）　本文",
+     "date": "2019-12-17"
+    },
+    {
+     "id": 836,
+     "title": "令和元年第５回定例会（第４日）　本文",
+     "date": "2019-12-20"
+    }
+   ]
+  },
+  {
+   "session": "令和2年第1回定例会",
+   "year": 2020,
+   "num": 1,
+   "start": "2020-03-18",
+   "roles": [],
+   "general_question": {
+    "date": "",
+    "document": 847,
+    "topics": [
+     "生涯学習センターの管理について",
+     "コミュニティバス等の運行について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8497.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 847,
+     "title": "令和２年第１回定例会（第４日）　本文",
+     "date": "2020-03-18"
+    }
+   ]
+  },
+  {
+   "session": "令和2年第3回定例会",
+   "year": 2020,
+   "num": 3,
+   "start": "2020-06-23",
+   "roles": [],
+   "general_question": {
+    "date": "2020-06-23",
+    "document": 858,
+    "topics": [
+     "待機児童の実態について",
+     "小中学校のオンライン授業について",
+     "公共機関のインターネット（Wi-Fi）の利用について",
+     "新型コロナウイルス感染症対策について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8496.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 858,
+     "title": "令和２年第３回定例会（第３日）　本文",
+     "date": "2020-06-23"
+    }
+   ]
+  },
+  {
+   "session": "令和2年第4回定例会",
+   "year": 2020,
+   "num": 4,
+   "start": "2020-09-24",
+   "roles": [],
+   "general_question": {
+    "date": "2020-09-24",
+    "document": 869,
+    "topics": [
+     "少子化対策について",
+     "放課後児童クラブの費用負担軽減について",
+     "社会変化に対応できる子育てについて"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/8495.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 869,
+     "title": "令和２年第４回定例会（第３日）　本文",
+     "date": "2020-09-24"
+    }
+   ]
+  },
+  {
+   "session": "令和2年第6回定例会",
+   "year": 2020,
+   "num": 6,
+   "start": "2020-12-15",
+   "roles": [],
+   "general_question": {
+    "date": "2020-12-15",
+    "document": 880,
+    "topics": [
+     "発熱者などの診療や検査体制について",
+     "保育所や幼稚園でのコロナ対応について",
+     "コロナと市民サービスについて",
+     "市庁舎で職員から感染者が発生した場合の対応について",
+     "給付金などを円滑に交付するためのシステムについて"
+    ],
+    "source": "minutes"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 880,
+     "title": "令和２年第６回定例会（第３日）　本文",
+     "date": "2020-12-15"
+    }
+   ]
+  },
+  {
+   "session": "令和3年第2回定例会",
+   "year": 2021,
+   "num": 2,
+   "start": "2021-03-18",
+   "roles": [],
+   "general_question": {
+    "date": "2021-03-18",
+    "document": 891,
+    "topics": [
+     "小中学校のタブレット活用について",
+     "学校におけるコロナ対策について",
+     "コロナ対策臨時交付金について",
+     "新型コロナウイルスワクチン接種について",
+     "令和2年度施政方針の成果について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/9333.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 891,
+     "title": "令和３年第２回定例会（第４日）　本文",
+     "date": "2021-03-18"
+    }
+   ]
+  },
+  {
+   "session": "令和3年第5回定例会",
+   "year": 2021,
+   "num": 5,
+   "start": "2021-06-24",
+   "roles": [],
+   "general_question": {
+    "date": "2021-06-24",
+    "document": 902,
+    "topics": [
+     "新型コロナウイルスワクチン接種について",
+     "学校や幼稚園・保育園でのコロナ感染について",
+     "コロナ禍の学校教育等について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/10604.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 902,
+     "title": "令和３年第５回定例会（第３日）　本文",
+     "date": "2021-06-24"
+    },
+    {
+     "id": 904,
+     "title": "令和３年第５回定例会（第４日）　本文",
+     "date": "2021-06-29"
+    }
+   ]
+  },
+  {
+   "session": "令和3年第6回定例会",
+   "year": 2021,
+   "num": 6,
+   "start": "2021-09-24",
+   "roles": [],
+   "general_question": {
+    "date": "2021-09-24",
+    "document": 913,
+    "topics": [
+     "2021全国学力テストについて",
+     "ベンダーロックインについて"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/11344.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 913,
+     "title": "令和３年第６回定例会（第３日）　本文",
+     "date": "2021-09-24"
+    }
+   ]
+  },
+  {
+   "session": "令和3年第8回定例会",
+   "year": 2021,
+   "num": 8,
+   "start": "2021-12-14",
+   "roles": [],
+   "general_question": {
+    "date": "2021-12-14",
+    "document": 924,
+    "topics": [
+     "学校部活動の外部指導員の導入について",
+     "外国人の住民投票権について",
+     "成長と分配について",
+     "新型コロナワクチンの接種証明書（ワクチンパスポート）の取組について"
+    ],
+    "notice": "https://www.city.chikushino.fukuoka.jp/uploaded/attachment/12206.pdf",
+    "source": "notice"
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 924,
+     "title": "令和３年第８回定例会（第３日）　本文",
+     "date": "2021-12-14"
+    }
+   ]
+  },
+  {
+   "session": "令和4年第2回定例会",
+   "year": 2022,
+   "num": 2,
+   "start": "2022-03-18",
+   "roles": [],
+   "general_question": {
+    "date": "2022-03-18",
+    "document": 939,
+    "topics": []
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 939,
+     "title": "令和４年第２回定例会（第５日）　本文",
+     "date": "2022-03-18"
+    }
+   ]
+  },
+  {
+   "session": "令和4年第3回定例会",
+   "year": 2022,
+   "num": 3,
+   "start": "2022-06-08",
+   "roles": [],
+   "general_question": {
+    "date": "2022-06-21",
+    "document": 950,
+    "topics": []
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 946,
+     "title": "令和４年第３回定例会（第１日）　本文",
+     "date": "2022-06-08"
+    },
+    {
+     "id": 950,
+     "title": "令和４年第３回定例会（第３日）　本文",
+     "date": "2022-06-21"
+    }
+   ]
+  },
+  {
+   "session": "令和4年第4回定例会",
+   "year": 2022,
+   "num": 4,
+   "start": "2022-09-22",
+   "roles": [],
+   "general_question": {
+    "date": "2022-09-22",
+    "document": 961,
+    "topics": []
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 961,
+     "title": "令和４年第４回定例会（第３日）　本文",
+     "date": "2022-09-22"
+    }
+   ]
+  },
+  {
+   "session": "令和4年第6回定例会",
+   "year": 2022,
+   "num": 6,
+   "start": "2022-12-13",
+   "roles": [],
+   "general_question": {
+    "date": "2022-12-13",
+    "document": 972,
+    "topics": []
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 972,
+     "title": "令和４年第６回定例会（第３日）　本文",
+     "date": "2022-12-13"
+    }
+   ]
+  },
+  {
+   "session": "令和5年第1回定例会",
+   "year": 2023,
+   "num": 1,
+   "start": "2023-03-13",
+   "roles": [],
+   "general_question": null,
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 983,
+     "title": "令和５年第１回定例会（第３日）　本文",
+     "date": "2023-03-13"
+    }
+   ]
+  },
+  {
+   "session": "令和5年第4回定例会",
+   "year": 2023,
+   "num": 4,
+   "start": "2023-07-03",
+   "roles": [],
+   "general_question": {
+    "date": "2023-07-03",
+    "document": 996,
+    "topics": []
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 996,
+     "title": "令和５年第４回定例会（第４日）　本文",
+     "date": "2023-07-03"
+    }
+   ]
+  },
+  {
+   "session": "令和5年第5回定例会",
+   "year": 2023,
+   "num": 5,
+   "start": "2023-09-21",
+   "roles": [],
+   "general_question": {
+    "date": "2023-09-21",
+    "document": 1007,
+    "topics": []
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 1007,
+     "title": "令和５年第５回定例会（第３日）　本文",
+     "date": "2023-09-21"
+    }
+   ]
+  },
+  {
+   "session": "令和5年第6回定例会",
+   "year": 2023,
+   "num": 6,
+   "start": "2023-12-15",
+   "roles": [],
+   "general_question": null,
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 1020,
+     "title": "令和５年第６回定例会（第４日）　本文",
+     "date": "2023-12-15"
+    }
+   ]
+  },
+  {
+   "session": "令和6年第2回定例会",
+   "year": 2024,
+   "num": 2,
+   "start": "2024-03-22",
+   "roles": [],
+   "general_question": {
+    "date": "2024-03-22",
+    "document": 1035,
+    "topics": []
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 1035,
+     "title": "令和６年第２回定例会（第５日）　本文",
+     "date": "2024-03-22"
+    }
+   ]
+  },
+  {
+   "session": "令和6年第3回定例会",
+   "year": 2024,
+   "num": 3,
+   "start": "2024-06-24",
+   "roles": [],
+   "general_question": {
+    "date": "2024-06-24",
+    "document": 1048,
+    "topics": []
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 1048,
+     "title": "令和６年第３回定例会（第４日）　本文",
+     "date": "2024-06-24"
+    }
+   ]
+  },
+  {
+   "session": "令和6年第4回定例会",
+   "year": 2024,
+   "num": 4,
+   "start": "2024-09-26",
+   "roles": [],
+   "general_question": {
+    "date": "2024-09-26",
+    "document": 1061,
+    "topics": []
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 1061,
+     "title": "令和６年第４回定例会（第４日）　本文",
+     "date": "2024-09-26"
+    }
+   ]
+  },
+  {
+   "session": "令和6年第5回定例会",
+   "year": 2024,
+   "num": 5,
+   "start": "2024-12-19",
+   "roles": [],
+   "general_question": null,
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 1074,
+     "title": "令和６年第５回定例会（第４日）　本文",
+     "date": "2024-12-19"
+    }
+   ]
+  },
+  {
+   "session": "令和7年第2回定例会",
+   "year": 2025,
+   "num": 2,
+   "start": "2025-03-24",
+   "roles": [],
+   "general_question": {
+    "date": "2025-03-24",
+    "document": 1089,
+    "topics": []
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 1089,
+     "title": "令和７年第２回定例会（第５日）　本文",
+     "date": "2025-03-24"
+    },
+    {
+     "id": 1091,
+     "title": "令和７年第２回定例会（第６日）　本文",
+     "date": "2025-03-26"
+    }
+   ]
+  },
+  {
+   "session": "令和7年第4回定例会",
+   "year": 2025,
+   "num": 4,
+   "start": "2025-06-20",
+   "roles": [],
+   "general_question": {
+    "date": "2025-06-20",
+    "document": 1102,
+    "topics": []
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 1102,
+     "title": "令和７年第４回定例会（第４日）　本文",
+     "date": "2025-06-20"
+    }
+   ]
+  },
+  {
+   "session": "令和7年第5回定例会",
+   "year": 2025,
+   "num": 5,
+   "start": "2025-09-24",
+   "roles": [],
+   "general_question": {
+    "date": "2025-09-24",
+    "document": 1115,
+    "topics": []
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 1115,
+     "title": "令和７年第５回定例会（第４日）　本文",
+     "date": "2025-09-24"
+    }
+   ]
+  },
+  {
+   "session": "令和7年第6回定例会",
+   "year": 2025,
+   "num": 6,
+   "start": "2025-12-03",
+   "roles": [],
+   "general_question": {
+    "date": "2025-12-18",
+    "document": 1128,
+    "topics": []
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 1122,
+     "title": "令和７年第６回定例会（第１日）　本文",
+     "date": "2025-12-03"
+    },
+    {
+     "id": 1128,
+     "title": "令和７年第６回定例会（第４日）　本文",
+     "date": "2025-12-18"
+    }
+   ]
+  },
+  {
+   "session": "令和8年第2回定例会",
+   "year": 2026,
+   "num": 2,
+   "start": "2026-03-24",
+   "roles": [],
+   "general_question": {
+    "date": "2026-03-24",
+    "document": 1143,
+    "topics": []
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 1143,
+     "title": "令和８年第２回定例会（第５日）　本文",
+     "date": "2026-03-24"
+    }
+   ]
+  },
+  {
+   "session": "令和8年第3回定例会",
+   "year": 2026,
+   "num": 3,
+   "start": "2026-06-22",
+   "roles": [],
+   "general_question": {
+    "date": "2026-06-22",
+    "document": 1156,
+    "topics": []
+   },
+   "proposals": [],
+   "debates": [],
+   "documents": [
+    {
+     "id": 1156,
+     "title": "令和８年第３回定例会（第４日）　本文",
+     "date": "2026-06-22"
+    }
+   ]
+  }
+ ],
+ "minutes_base": "https://www.city.chikushino.fukuoka.dbsr.jp/index.php/?Template=view&VoiceType=all&DocumentID=",
+ "documents": 153
+}
